@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目订单</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link type="text/css" href="css/common.css"  rel="stylesheet">
+    <link type="text/css" href="css/style.css"  rel="stylesheet">
+    <link type="text/css" href="css/easyui.css"  rel="stylesheet">
+    <link type="text/css" href="css/tablet.css"  media="(max-width:1200px)" rel="stylesheet" >
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.easyui.min.js" type="text/javascript"></script>
+</head>
+<body>
+ <aside>
+   <div class="aside_nav">
+      <div class="aside_logo" >
+          <img src="img/logo.png">
+          <input type="button"  id="small_btn">
+      </div>
+      <div class="aside_content">
+          <ul id="aside_ul" class="clearfix">
+              <li>
+                 <a class=" aside_down">
+                   <img src="img/jichu.png"><span class="aside_label">基础档案</span><img src="img/before.png " class="down_img">
+                 </a>
+                  <ul >
+                      <li>
+                          <a >
+                              公司档案
+                          </a>
+                      </li>
+                      <li>
+                          <a>
+                               服务商品档案
+                          </a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="index.html" class=" aside_down">
+                      <img src="img/dangan.png"><span class="aside_label">项目档案</span><img src="img/before.png "  class="down_img">
+                  </a>
+              </li>
+              <li >
+                  <a class="aside_down">
+                      <img src="img/dingdan.png"><span class="aside_label">订单</span><img src="img/before.png "  class="down_img">
+                  </a>
+              </li>
+              <li>
+                  <a class="aside_down">
+                      <img src="img/zijin.png"><span class="aside_label">资金</span><img src="img/before.png "  class="down_img">
+                  </a>
+              </li>
+              <li>
+                  <a href="Project_target.html" class="aside_down">
+                      <img src="img/tast.png"><span class="aside_label">项目任务</span>
+                  </a>
+              </li>
+              <li    class="active">
+                  <a href="project_order.html" class="aside_down">
+                      <img src="img/xangmu.png"><span class="aside_label">项目订单</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="Project_funds.html" class="aside_down">
+                      <img src="img/money.png"><span class="aside_label">项目资金</span>
+                  </a>
+              </li>
+              <li  >
+                  <a href="project_address_book.html" class=" aside_down">
+                      <img src="img/tel.png"><span class="aside_label">项目通讯录</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="Project_file.html" class=" aside_down">
+                      <img src="img/file.png"><span class="aside_label">项目文件</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+   </div>
+ </aside>
+ <article>
+     <div class="project_all_wrap">
+         <nav>
+             <div class="project_all_nav">
+                 <div class="project_all_nav_info">
+                     <img src="./img/home.png" alt="" class="img1">
+                     <img src="./img/set.png" alt="" class="img2">
+                     <img src="./img/st.png" alt="" class="img3">
+                     <img src="./img/admin.png" alt="" class="img4">
+                     <span>Admin</span>
+                     <img src="./img/xl.png" alt="" class="img5">
+                 </div>
+             </div>
+         </nav>
+         <section>
+             <div class="project_all_content">
+                 <div class="project_all_content_header">
+                     <img src="./img/ddst.png" alt="">
+                     <span>项目订单</span>
+                 </div>
+                 <!--韦-->
+                 <div class="content_table_top clearfix">
+                     <div class="">
+                         <span class="content_table_text">
+                             项目名称：衢州辉宏建设有限公司
+                         </span>
+                     </div>
+                     <div class="content_table_cor">更改项目</div>
+                 </div>
+                 <div class="project_order_content" >
+                     <div class="project_content_tp">
+                        <ul id="tab" class="clearfix">
+                            <li class="active">
+                               <p>我的订单<span>12</span></p>
+                            </li>
+                            <li>
+                                <p>待结算<span>12</span></p>
+                            </li>
+                            <li>
+                                <p>待发货<span>12</span></p>
+                            </li>
+                            <li>
+                                <p>待收货<span>12</span></p>
+                            </li>
+                            <li>
+                                <p>待评价<span>12</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project_tab_content" style="display: block; ">
+                        <div class="project_tab_tit">
+                            <ul class="clearfix">
+                                <li>订单单号</li>
+                                <li>订货日期</li>
+                                <li>总金额</li>
+                                <li>结算金额</li>
+                                <li>收货人</li>
+                                <li>收货电话</li>
+                                <li>操作</li>
+                            </ul>
+                        </div>
+                        <div class="project_tab_more    "  >
+                            <div class="project_tab_detail"  >
+                                <ul class="clearfix">
+                                    <li>
+                                       <div>
+                                           <h4>1</h4>
+                                            <span>订单单号：</span>
+                                            <span>1257854</span>
+                                       </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>2017-07-05</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>总金额：</span>
+                                            <span>1600</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>结算金额：</span>
+                                            <span>1600</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                             <span>王敏</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                           1335678900
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div style="display: inline-block">
+                                                <button  class="button" onclick="openDialog()">添加任务</button>
+                                                <div class='tchuang-txt'>
+                                                    <div class="tchuang-txt-top">
+                                                        <span>添加任务</span>
+                                                        <img src="./img/close.png" alt="" onclick="closeDialog()">
+                                                    </div>
+                                                    <form>
+                                                        <p><label for="">任务标题</label><input type="text" placeholder="请输入标题"></p>
+                                                        <p><label for="">指派人</label><input type="text" placeholder="请输入名字"></p>
+                                                        <p><label for="">计划完成时间</label><input type="text" class="easyui-datetimebox"></p>
+                                                        <p><label for="">任务内容</label><textarea name="" cols="30" rows="5" placeholder="备注" style="resize: none"></textarea></p>
+                                                        <div style="margin-top: 38px;border-bottom: 1px solid #b1b1b1"></div>
+                                                        <button id="btn">保存</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <span class="click_btn">查看明细<img src="img/up.png" ></span>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="project_tab_table" >
+                                <table class="tab_table"   >
+                                    <tr>
+                                        <th>订单商品名称</th>
+                                        <th>商品编码</th>
+                                        <th>订货量</th>
+                                        <th>结算量</th>
+                                        <th>发货量</th>
+                                        <th>收货量</th>
+                                        <th>商品金额</th>
+                                        <th>结算金额</th>
+                                        <th>是否完成</th>
+                                    </tr>
+                                    <tr>
+                                        <td>坐便器</td>
+                                        <td>A87867C</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1000</td>
+                                        <td>1000</td>
+                                        <td>&times</td>
+                                    </tr>
+                                    <tr>
+                                        <td>坐便器</td>
+                                        <td>A87867C</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1000</td>
+                                        <td>1000</td>
+                                        <td>&times</td>
+                                    </tr>
+                                    <tr>
+                                        <td>坐便器</td>
+                                        <td>A87867C</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1000</td>
+                                        <td>1000</td>
+                                        <td>&times</td>
+                                    </tr>
+                                </table>
+                                <div class="tab_table_server" >
+                                     <ul class="clearfix">
+                                         <li>
+                                             服务费 : <span>0.00</span>
+                                         </li>
+                                         <li>
+                                             总金额 : <span>0.00</span>
+                                         </li>
+                                         <li>
+                                             收货地址 : <span>0.00</span>
+                                         </li>
+                                     </ul>
+                                </div>
+                                <div class="tab_table_order clearfix">
+                                     <div class="tab_table_order_l">
+                                         <h2>订单状态</h2>
+                                         <table>
+                                             <tr>
+                                                 <td>动态</td>
+                                                 <td>操作人</td>
+                                                 <td>操作时间</td>
+                                                 <td>联系方式</td>
+                                             </tr>
+                                             <tr>
+                                                 <td>订单结算</td>
+                                                 <td>闲云</td>
+                                                 <td>2017-07-05 15:16:20</td>
+                                                 <td>15390765252</td>
+                                             </tr>
+                                             <tr>
+                                                 <td>订单结算</td>
+                                                 <td>闲云</td>
+                                                 <td>2017-07-05 15:16:20</td>
+                                                 <td>15390765252</td>
+                                             </tr>
+                                             <tr>
+                                                 <td>订单结算</td>
+                                                 <td>闲云</td>
+                                                 <td>2017-07-05 15:16:20</td>
+                                                 <td>15390765252</td>
+                                             </tr>
+                                         </table>
+                                     </div>
+                                    <div class="tab_table_order_r"  >
+                                        <h2>任务详情</h2>
+                                        <table>
+                                            <tr>
+                                                <td>任务内容</td>
+                                                <td>发起人</td>
+                                                <td>发起时间</td>
+                                                <td>指派人</td>
+                                                <td>计划完成时间</td>
+                                                <td>是否完成</td>
+                                            </tr>
+                                            <tr>
+                                                <td>第一个任务</td>
+                                                <td>管理员</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>&times</td>
+                                            </tr>
+                                            <tr>
+                                                <td>第一个任务</td>
+                                                <td>管理员</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>&times</td>
+                                            </tr>
+                                            <tr>
+                                                <td>第一个任务</td>
+                                                <td>管理员</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>&times</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-----2----->
+                        <div class="project_tab_more"  >
+                            <div class="project_tab_detail"  >
+                                <ul class="clearfix">
+                                    <li>
+                                        <div>
+                                            <h4>1</h4>
+                                            <span>订单单号：</span>
+                                            <span>1257854</span>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>2017-07-05</span>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>总金额：</span>
+                                            <span>1600</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>结算金额：</span>
+                                            <span>1600</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>王敏</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            1335678900
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div style="display: inline-block">
+                                                <button  class="button" onclick="openDialog()">添加任务</button>
+                                                <div class='tchuang-txt'>
+                                                    <div class="tchuang-txt-top">
+                                                        <span>添加任务</span>
+                                                        <img src="./img/close.png" alt="" onclick="closeDialog()">
+                                                    </div>
+                                                    <form>
+                                                        <p><label for="">任务标题</label><input type="text" placeholder="请输入标题"></p>
+                                                        <p><label for="">指派人</label><input type="text" placeholder="请输入名字"></p>
+                                                        <p><label for="">计划完成时间</label><input type="text" class="easyui-datetimebox"></p>
+                                                        <p><label for="">任务内容</label><textarea name="" cols="30" rows="5" placeholder="备注" style="resize: none"></textarea></p>
+                                                        <div style="margin-top: 38px;border-bottom: 1px solid #b1b1b1"></div>
+                                                        <button id="btn">保存</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <span  class="click_btn">查看明细 <img src="img/up.png"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="project_tab_table">
+                                <table class="tab_table"   >
+                                    <tr>
+                                        <th>订单商品名称</th>
+                                        <th>商品编码</th>
+                                        <th>订货量</th>
+                                        <th>结算量</th>
+                                        <th>发货量</th>
+                                        <th>收货量</th>
+                                        <th>商品金额</th>
+                                        <th>结算金额</th>
+                                        <th>是否完成</th>
+                                    </tr>
+                                    <tr>
+                                        <td>坐便器</td>
+                                        <td>A87867C</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1000</td>
+                                        <td>1000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>坐便器</td>
+                                        <td>A87867C</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1000</td>
+                                        <td>1000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>坐便器</td>
+                                        <td>A87867C</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1000</td>
+                                        <td>1000</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <div class="tab_table_server" >
+                                    <ul class="clearfix">
+                                        <li>
+                                            服务费 : <span>0.00</span>
+                                        </li>
+                                        <li>
+                                            总金额 : <span>0.00</span>
+                                        </li>
+                                        <li>
+                                            收货地址 : <span>0.00</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab_table_order clearfix">
+                                    <div class="tab_table_order_l">
+                                        <h2>订单状态</h2>
+                                        <table>
+                                            <tr>
+                                                <td>动态</td>
+                                                <td>操作人</td>
+                                                <td>操作时间</td>
+                                                <td>联系方式</td>
+                                            </tr>
+                                            <tr>
+                                                <td>订单结算</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>15390765252</td>
+                                            </tr>
+                                            <tr>
+                                                <td>订单结算</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>15390765252</td>
+                                            </tr>
+                                            <tr>
+                                                <td>订单结算</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>15390765252</td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                    <div class="tab_table_order_r"  >
+
+                                        <h2>任务详情</h2>
+                                        <table>
+                                            <tr>
+                                                <td>任务内容</td>
+                                                <td>发起人</td>
+                                                <td>发起时间</td>
+                                                <td>指派人</td>
+                                                <td>计划完成时间</td>
+                                                <td>是否完成</td>
+                                            </tr>
+                                            <tr>
+                                                <td>第一个任务</td>
+                                                <td>管理员</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>第一个任务</td>
+                                                <td>管理员</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>第一个任务</td>
+                                                <td>管理员</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>+</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!------3-->
+                        <div class="project_tab_more"  >
+                            <div class="project_tab_detail"  >
+                                <ul class="clearfix">
+                                    <li>
+                                        <div>
+                                            <h4>3</h4>
+                                            <span>订单单号：</span>
+                                            <span>1257854</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>2017-07-05</span>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>总金额：</span>
+                                            <span>1600</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>结算金额：</span>
+                                            <span>1600</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <span>王敏</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            1335678900
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div style="display: inline-block">
+                                                <button  class="button" onclick="openDialog()">添加任务</button>
+                                                <div class='tchuang-txt'>
+                                                    <div class="tchuang-txt-top">
+                                                        <span>添加任务</span>
+                                                        <img src="./img/close.png" alt="" onclick="closeDialog()">
+                                                    </div>
+                                                    <form>
+                                                        <p><label for="">任务标题</label><input type="text" placeholder="请输入标题"></p>
+                                                        <p><label for="">指派人</label><input type="text" placeholder="请输入名字"></p>
+                                                        <p><label for="">计划完成时间</label><input type="text" class="easyui-datetimebox"></p>
+                                                        <p><label for="">任务内容</label><textarea name="" cols="30" rows="5" placeholder="备注" style="resize: none"></textarea></p>
+                                                        <div style="margin-top: 38px;border-bottom: 1px solid #b1b1b1"></div>
+                                                        <button id="btn">保存</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <span class="click_btn">查看明细 <img src="img/up.png" ></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="project_tab_table">
+                                <table class="tab_table"   >
+                                    <tr>
+                                        <th>订单商品名称</th>
+                                        <th>商品编码</th>
+                                        <th>订货量</th>
+                                        <th>结算量</th>
+                                        <th>发货量</th>
+                                        <th>收货量</th>
+                                        <th>商品金额</th>
+                                        <th>结算金额</th>
+                                        <th>是否完成</th>
+                                    </tr>
+                                    <tr>
+                                        <td>坐便器</td>
+                                        <td>A87867C</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1000</td>
+                                        <td>1000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>坐便器</td>
+                                        <td>A87867C</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1000</td>
+                                        <td>1000</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>坐便器</td>
+                                        <td>A87867C</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1000</td>
+                                        <td>1000</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                                <div class="tab_table_server" >
+                                    <ul class="clearfix">
+                                        <li>
+                                            服务费 : <span>0.00</span>
+                                        </li>
+                                        <li>
+                                            总金额 : <span>0.00</span>
+                                        </li>
+                                        <li>
+                                            收货地址 : <span>0.00</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab_table_order clearfix">
+                                    <div class="tab_table_order_l">
+                                        <h2>订单状态</h2>
+                                        <table>
+                                            <tr>
+                                                <td>动态</td>
+                                                <td>操作人</td>
+                                                <td>操作时间</td>
+                                                <td>联系方式</td>
+                                            </tr>
+                                            <tr>
+                                                <td>订单结算</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>15390765252</td>
+                                            </tr>
+                                            <tr>
+                                                <td>订单结算</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>15390765252</td>
+                                            </tr>
+                                            <tr>
+                                                <td>订单结算</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>15390765252</td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                    <div class="tab_table_order_r"  >
+
+                                        <h2>任务详情</h2>
+                                        <table>
+                                            <tr>
+                                                <td>任务内容</td>
+                                                <td>发起人</td>
+                                                <td>发起时间</td>
+                                                <td>指派人</td>
+                                                <td>计划完成时间</td>
+                                                <td>是否完成</td>
+                                            </tr>
+                                            <tr>
+                                                <td>第一个任务</td>
+                                                <td>管理员</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>第一个任务</td>
+                                                <td>管理员</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>第一个任务</td>
+                                                <td>管理员</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>闲云</td>
+                                                <td>2017-07-05 15:16:20</td>
+                                                <td>+</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <!-----待结算-->
+                     <div class=" project_tab_content">
+                          <p>22</p>
+                     </div>
+                     <div class=" project_tab_content">
+                         3
+                     </div>
+                     <div class=" project_tab_content">
+                         4
+                     </div>
+                     <div class=" project_tab_content">
+                         5
+                     </div>
+                 </div>
+             </div>
+             <div class="project_all_content_page">
+                 <form class="page">
+                     <a href class="a1"><<上一页</a>
+                     <a href class="a2 on">1</a>
+                     <a href class="a2">2</a>
+                     <a href class="a2">3</a>
+                     <a href class="a2">4</a>
+                     <a href class="a1">下一页>></a>
+                     <span>到第</span>
+                     <span class="a3">2</span>
+                     <span>页</span>
+                     <button class="a4">确定</button>
+                 </form>
+             </div>
+         </section>
+     </div>
+     <div class='tchuang-bg'></div>
+ </article>
+ <script src="js/minibar.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".click_btn").click(function(){
+
+            var odiv=$(this).parent().parent().parent().parent().next();
+            var odiv1=$(this).parent().parent().parent().parent().next().css('display');
+            var oimg=$(this).find('img');
+            if (odiv1=='block'){
+                $(this).parent().parent().parent().parent().parent().css('padding-bottom',"0px");
+                oimg.attr('src','img/up.png');
+
+            }
+            else{
+                $(this).parent().parent().parent().parent().parent().css('padding-bottom',"20px");
+                oimg.attr('src','img/down.png')
+            }
+            odiv.slideToggle(300);
+        });
+        var otab=document.getElementById('tab');
+        var ali=otab.getElementsByTagName('li');
+        var opojext=document.getElementsByClassName('project_tab_content');
+        for (var i=0;i<ali.length;i++){
+            ali[i].index=i;
+            ali[i].onclick=function(){
+                for (var i=0;i<ali.length;i++){
+                    ali[i].className='';
+                    opojext[i].style.display='none';
+                    this.className='active';
+                    opojext[this.index].style.display='block';
+                }
+            }
+        }
+        /*导航栏鼠标经过*/
+        $('#aside_ul li').mouseover(function(){
+            $(this).css('background-color','#212329');
+        });
+        $('#aside_ul li').mouseout(function(){
+            $(this).css('background-color','');
+           //$('.aside_content ul li ul').removeClass("mini_ui");
+        });
+        $('.aside_down').click(function(){
+            $(this).parent().addClass('active');
+            // var aimg=$(this).find('.down_img');
+            var nexts =$(this).next().css('display');
+            $(this).next().slideToggle(300);
+            $(this).find('.down_img').attr('src','img/before.png');
+            if ( nexts=='none'){
+                $(this).find('.down_img').attr('src','img/after.png');
+            }
+        });
+    })
+
+    /*点击小导航*/
+   /*  $('#small_btn').click(function(){
+         if (count%2==0){
+             var t = setTimeout(function(){
+                 $('.aside_down img').nextAll().hide();
+                 $('.aside_nav').css('width','80px');
+                 $('.aside_logo img').hide().next().css('margin-right','30px');
+                 $('.project_all_wrap').css('margin-left','80px');
+                 $('.aside_content ul li').css('padding-left','25px')
+             },100)
+             count++
+         }
+           else{
+             $('.aside_down img').nextAll().show();
+             alert('你是不是傻')
+             count++
+         }
+    })*/
+
+
+</script>
+ <script>
+     var demobg = document.querySelector(".tchuang-bg");
+     var demotxt = document.querySelector(".tchuang-txt");
+     var body = document.querySelector("body");
+     function openDialog() {
+         demotxt.style.display = "block";
+         demobg.style.display = "block";
+         body.style.overflow = "hidden";
+     }
+     function closeDialog() {
+         demotxt.style.display = "none";
+         demobg.style.display = "none";
+         body.style.overflow = "auto";
+     }
+ </script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+body,html{
+    height: 100%;
+    font-family:"微软雅黑";
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+input,button{
+    outline: none
+;
+}
+body,li,p,ul {
+    margin: 0;
+    padding: 0;
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+ul, li, ol,p,table,span,div{ list-style: none;font-family:"微软雅黑"; }
+/* 重置文本格式元素 */
+a { text-decoration: none; cursor: pointer;  font-size:14px; font-family:"微软雅黑";}
+a:hover { text-decoration: none; }
+.clearfix::after{ display:block; content:''; height:0; overflow:hidden; clear:both;}
+ /*公共侧边栏*/
+.aside_nav{
+    position: fixed;
+    width: 260px;
+    background-color: #2c2f38;
+    height: 100%;
+    overflow: hidden;
+}
+.aside_nav_mini{
+    position: fixed;
+    width: 80px;
+    background-color: #2c2f38;
+    height: 100%;
+    overflow: hidden;
+}
+.aside_nav .aside_logo {
+    height: 80px;
+    background-color: #212329;
+}
+.aside_logo img{
+    margin-left: 80px;
+    margin-top: 26px;
+}
+.aside_logo input{
+    display:inline-block ;
+    float:right;
+    border: none;
+    width: 23px;
+    height: 19px;
+    margin-right: 22px;
+    background: url("../img/btn.png") 100% 100%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.aside_content  ul{
+    margin-top:48px;
+}
+.aside_content > ul >li{
+    padding-left: 73px;
+    position: relative;
+}
+.aside_content > ul> li>a{
+    display: block;
+    position: relative;
+    line-height: 70px;
+
+}
+.aside_content  ul li a img:first-child{
+    vertical-align: middle;
+    margin-right: 14px;
+}
+.aside_content  ul li a img:last-child {
+     display: inline-block;
+     float: right;
+     margin-right: 50px;
+     margin-top: 33px;
+}
+.aside_content  ul li a .aside_label{
+    color: #bfbfbf;
+    font-size:16px;
+    vertical-align: middle;
+}
+.aside_content   li.active{
+    border-left:10px solid #c1cae6 ;
+    background-color: #212329;
+}
+/* .aside_content   li.active ul{
+   display: block;
+
+}*/
+.aside_content  ul li ul{
+    display: none;
+    margin-top: 0;
+}
+.aside_content  ul li ul li {
+
+    padding-left: 40px;
+    line-height: 50px;
+    color: #bfbfbf;
+
+}
+.mini_ui{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 200px;
+    border: 1px solid red;
+    z-index: 9999;
+}
+/*-----公共内容父元素----*/
+.project_all_wrap{
+    position: relative !important;
+    background-color:  #f0f0f0;
+    margin: 0 0 0 260px;
+    height:100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    min-height: 974px;
+}
+.project_all_content{
+    padding:0 20px;
+}
+.project_all_nav{
+    background-color: white;
+    height: 60px;
+    width: 100%;
+}
+/*公共的顶部导航*/
+.project_all_nav{
+    position: relative;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+}
+.project_all_nav_info{
+    position: absolute;
+    right: 142px;
+    top:13px;
+}
+.project_all_nav_info>img{
+    vertical-align: middle;
+}
+.project_all_nav_info>.img1{
+    margin-right: 14px;
+}
+.project_all_nav_info>.img2{
+    margin-right: 16px;
+}
+.project_all_nav_info>.img3{
+    margin-right: 15px;
+}
+.project_all_nav_info>.img4{
+    margin-right: 12px;
+}
+.project_all_nav_info>span{
+    margin-right: 10px;
+}
+.project_all_content_header{
+    width: 300px;
+    line-height: 60px;
+
+}
+.project_all_content_header>img{
+    vertical-align: middle;
+    margin-right: 12px;
+}
+.project_all_content_header{
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #3c3f47;
+}
+.project_all_content_page{
+    position: relative;
+    background-color: #ffffff;
+    height: 160px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.project_all_content_page>.page{
+    position: absolute;
+    right: 123px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+.project_all_content_page>.page>span,.a1,.a2,.a3,.a4{
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    color: #555555;
+    font-family: 微软雅黑;
+}
+.project_all_content_page>.page>.a1{
+    width: 72px;
+    background-image: url("../img/syy.png");
+}
+.project_all_content_page>.page>.a2{
+    width: 21px;
+    background-image: url("../img/fy.png");
+}
+.project_all_content_page>.page>.a3{
+    width: 26px;
+    background-image: url("../img/xy.png");
+}
+.project_all_content_page>.page>.a4{
+    border: none;
+    width: 46px;
+    background-image: url("../img/qd.png");
+}
+.project_all_content_page>.page>.on{
+    background-image: none;
+    color: #f05c00;
+}
